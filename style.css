@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    text-align: justify;
 }
 
 #main{
@@ -33,10 +32,162 @@ h1{
     font-size: 40px;
 }
 
+#justify{
+    text-align: justify;
+}
 .square{
     height: 12px;
     width: 12px;
     display: inline-block;
     background: #3B3B3B;
     margin: 15px 0;
+}
+
+#sideMenu{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #FFE002;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+#menuButton{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+.bodyx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+}
+
+.container .card1{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #3B3B3B;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cardfix{
+    width: 280px;
+    height: 200px;
+}
+
+.container .card1:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFE002;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card1:hover:before
+{
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container .card1:after
+{
+    content: 'PROJECT';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 8em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,255,0.04);
+}
+
+.container .card1 .imgbox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.container .card1:hover .imgbox{
+   top: 0%;
+   transform: translateY(0%);
+}
+
+.container .card1 .imgbox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-8deg);
+    width: 270px;
+}
+
+.container .card1 .contentbox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container .card1:hover .contentbox{
+    height: 210px;
+}
+
+.container .card1 .contentbox h3{
+    position: relative;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.container .card1 .contentbox .link{
+    display: inline-block;
+    padding: 10px 20px;
+    background: whitesmoke;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.container .card1:hover .contentbox .link{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
 }
