@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    height: 100vh;
+    background-image: url(image/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.logo-class{
+    margin-top: 30px;
+    width: 100px;
+}
