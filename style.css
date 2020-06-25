@@ -539,3 +539,83 @@ hr{
 .copyright{
     flex-basis: 40%;
 }
+
+/*social icons*/
+.socialicons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.socialicons img{
+    display: block;
+    width: 20px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 770px){
+    #main{
+        background-image: none;
+    }
+    .container{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    .logo-class{
+        margin-top: 27px;
+        width: 70px;
+    }
+    
+    .header-text{
+        margin-top: 100px;
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+
+    #menuButton{
+        width: 40px;
+        right: 50px;
+    }
+
+    .common-btn{
+        padding: 10px 16px;
+    }
+
+    .socialicons img{
+        display: none;
+    }
+
+    .container .card1{
+    flex-basis: 100%;
+    width: 320px;
+    height: 450px;
+    background: #3B3B3B;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    }
+
+    .contact-left-col, .contact-right-col{
+        flex-basis: 100%;
+    }
+    .contact-right-col{
+        margin-top: 50px;
+    }
+
+    .footer-left-col, .footer-right-col{
+        flex-basis: 100%;
+    }
+    
+    .link-title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+}

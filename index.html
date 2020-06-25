@@ -6,6 +6,7 @@
     <title>Portfolio Aayush</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
 <!--Main Body Section-->
@@ -14,7 +15,7 @@
             <img src="image/logo.png" class="logo-class">
             <div class="header-text">
                 <h1>About Me</h1>
-                <p id="justify"><br>I am a web developer with a background on javascript and its framework, Angular. I have worked on projects with Angular and NodeJS. I also have an interest in machine learning and have made mini-projects based on same. <br> <br> On a less professional note, I love to play guitar and edit videos and pictures. I also write blogs and rap sometimes.</p>
+                <p id="justify"><br>I am a software engineer with affinity for web development and designing. I have worked on projects with Angular, React, Java, Python, Unity and more. I have experience with Java having completed the Object Oriented Programming course and Data Structures course with it. I also have an interest in machine learning and have made mini-projects based on the same.<br> <br> On a less professional note, I love to play guitar and edit videos and pictures. I also write blogs and rap sometimes.</p>
                 <a href="documents/Aayush_Mallik_Resume.pdf">
                 <button type="button" class="btn btn-light btn-sm" style="float: right;">Download Resume</button>
                 </a>
@@ -31,9 +32,9 @@
         <ul>
             <li><a href="#">ABOUT ME</a></li>
             <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#">CERTIFICATES</a></li>
-            <li><a href="#">INTERESTS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#certificates">CERTIFICATES</a></li>
+            <li><a href="#interests">INTERESTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <img src="image/menu.png" id="menuButton">
@@ -169,11 +170,11 @@
     <div class="container contact-row">
         <div class="contact-left-col">
             <h1>Reach Out <br> to Me</h1>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <button class="common-btn btn-block btn-dark">Submit</button>
+        <form action="form.php" method="post" name="form" class="form-box">
+            <input type="text" placeholder="Name" name="name">
+            <input type="email" placeholder="Email" name="email">
+            <textarea placeholder="Message" name="message"></textarea>
+            <button type="submit" name="submit" value="Send" class="common-btn btn-block btn-dark">Submit</button>
         </form>
         </div>
         <div class="contact-right-col">
@@ -189,24 +190,38 @@
         <div class="footer-left-col">
             <div class="footer-links">
                 <div class="link-title">
-                    <h4>Product</h4>
-                    <small>Our Plan</small><br>
-                    <small>Free Trail</small>
+                    <h4>Skills</h4>
+                    <small>Java</small><br>
+                    <small>Angular</small><br>
+                    <small>React</small><br>
+                    <small>NodeJS</small><br>
+                    <small>Python</small><br>
+                    <small>Adobe XD</small><br>
+                    <small>Premiere</small><br>
+                    <small>Photoshop</small>
                 </div>
                 <div class="link-title">
-                    <h4>About Us</h4>
-                    <small>Request Demo</small><br>
-                    <small>FAQs</small>
+                    <h4>Traits</h4>
+                    <small>Diligent</small><br>
+                    <small>Open to new ideas</small><br>
+                    <small>Skillful</small><br>
+                    <small>Punctual</small><br>
+                    <small>Creative</small>
                 </div>
                 <div class="link-title">
-                    <h4>Support</h4>
-                    <small>Features</small><br>
-                    <small>Contact Us</small>
+                    <h4>Language <br>Proficiency</h4>
+                    <small>Nepali</small><br>
+                    <small>English</small><br>
+                    <small>Hindi</small><br>
+                    <small>Maithali</small><br>
+                    <small>Mandarin</small>
                 </div>
                 <div class="link-title">
-                    <h4>Explore</h4>
-                    <small>Find a nonprofit</small><br>
-                    <small>Solution</small>
+                    <h4>Extra</h4>
+                    <small>Video Editor</small><br>
+                    <small>Photo Editor</small><br>
+                    <small>Blogger</small><br>
+                    <small>Music Artist</small>
                 </div>
             </div>
         </div>
@@ -214,7 +229,7 @@
             <div class="footer-info">
                 <div class="copyright">
                     <small>Aayush Mallik</small><br>
-                    <small>copyright 2020 AM</small>
+                    <small>copyright 2020</small>
                 </div>
                 <div class="footer-logo">
                     <img src="image/logo.png">
@@ -224,8 +239,22 @@
     </div>
 </section>
 
+<!--Social Media-->
 
+<div class="socialicons">
 
+    <a href="https://github.com/wooziemcic">
+    <img src="image/github.png">
+    </a>
+
+    <a href="https://www.linkedin.com/in/aayush-mallik/">
+    <img src="image/linkedin.png">
+    </a>
+
+    <a href="https://twitter.com/wooziemovie">
+    <img src="image/twitter.png">
+    </a>
+</div>
 
 
     <script>
@@ -238,6 +267,11 @@
             else
                 sideNav.style.right = "-250px";
         }
+
+	var scroll = new SmoothScroll('a[href*="#"]',{
+        speed: 1000,
+        speedAsDuration: true
+    });
     </script>
 </body>
 </html>
