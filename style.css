@@ -85,6 +85,26 @@ nav ul li a{
     position: relative;
 }
 
+
+/*
+@media screen and (max-width:1200px){
+    .rowmedia{
+        width: 80%;
+    }
+    .colmedia{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:60px){
+    .rowmedia{
+        width: 90%;
+    }
+    .colmedia{
+        width: 90%;
+    }
+}*/
+
 .container .card1{
     position: relative;
     width: 320px;
@@ -289,3 +309,125 @@ nav ul li a{
      }
 }
 
+
+/* Interest */
+.interestbody{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.bodyall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.sq{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sq span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #1C1C1C;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+
+.sq:hover span:nth-child(1){
+    border: none;
+    background:#FFE002 ;
+}
+
+.sq span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #1C1C1C;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.sq:hover span:nth-child(2){
+    border: none;
+    background:#FFE002 ;
+}
+
+.sq span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #1C1C1C;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+
+.sq:hover span:nth-child(3){
+    border: none;
+    background:#FFE002 ;
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.sq-content{
+    position: relative;
+    padding: 40px 60px;
+    color: #3B3B3B;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.sq-content .interesta{
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    border: 2px solid #3B3B3B;
+    padding: 6px 18px;
+    text-decoration: none;
+    color: #3B3B3B;
+    font-weight: 600;
+}
+
+.sq-content .interesta:hover{
+    background: #3B3B3B;
+    color: whitesmoke;
+
+}
