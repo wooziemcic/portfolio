@@ -218,7 +218,7 @@ nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
     background: #3B3B3B;
 }
 
@@ -311,6 +311,7 @@ nav ul li a{
 
 
 /* Interest */
+
 .interestbody{
     margin: 0;
     padding: 0;
@@ -432,6 +433,7 @@ nav ul li a{
 }
 
 /*Contact*/
+
 .contact-row{
     display: flex;
     align-items: center;
@@ -480,3 +482,60 @@ textarea{
     border: 2px solid #3B3B3B;
 }
 
+/*Footer*/
+#footer{
+    padding: 50px 0 30px;
+}
+
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #1C1C1C;
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left-col{
+    flex-basis: 50%;
+    margin-top: 60px;
+}
+
+.footer-right-col{
+    flex-basis: 35%;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link-title h4{
+    color: #1C1C1C;
+    margin-bottom: 20px;
+}
+
+.link-title small{
+    font-size: 13px;
+    color: #3B3B3B;
+}
+
+.footer-info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img{
+    width: 100px;
+}
+
+.copyright{
+    flex-basis: 40%;
+}
